@@ -1,8 +1,14 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import App from './App';
-
+import { BrowserRouter as Router } from 'react-router-dom';
+import {RoomProvider} from './context'
 
 ReactDom.render (
-  <App />, document.querySelector('#root')
+  <RoomProvider>
+     <Router>
+       <App />
+     </Router>
+  </RoomProvider>,
+  document.querySelector('#root')
 )

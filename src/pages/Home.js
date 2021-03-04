@@ -1,10 +1,21 @@
 import React from 'react';
+import Hero from '../components/Hero';
+import Banner from '../components/Banner';
+import { Link } from 'react-router-dom';
+import Services from '../components/Services';
+import FeaturedRooms from '../components/FeaturedRooms';
 
 const Home = () => {
   return (
-    <div>
-      Hello from Home Page
-    </div>
+    <>
+      <Hero >
+        <Banner title="luxurious rooms" subtitle="deluxe rooms starting at ₦6000">
+          <Link to='/' className="btn-primary">Our Rooms</Link>
+        </Banner>
+      </Hero>
+      <Services />
+      <FeaturedRooms />
+    </>
   );
 };
 
