@@ -20,7 +20,7 @@ body {
   padding-top: 66px;
   color: var(--mainBlack);
   background: var(--mainWhite);
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Montserrat, sans-serif;
   line-height: 1.4;
 }
 h1 {
@@ -95,7 +95,7 @@ h6 {
   width: 100%;
   padding: 0.75rem 2rem;
   background: var(--offWhite);
-  z-index: 1;
+  z-index: 8;
 }
 .nav-header {
   display: flex;
@@ -143,6 +143,7 @@ h6 {
     max-width: 1170px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
   }
   .nav-links {
     height: auto;
@@ -299,8 +300,9 @@ h6 {
 /* end pf featured rooms */
 /* room */
 .room {
-  box-shadow: var(--lightShadow);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
   transition: var(--mainTransition);
+  border-radius: 12px;
 }
 .room:hover {
   box-shadow: var(--darkShadow);
@@ -313,14 +315,17 @@ h6 {
   width: 100%;
   display: block;
   transition: var(--mainTransition);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
-.price-top {
+.price-top { 
   position: absolute;
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.8);
   color: var(--mainWhite);
   padding: 0.3rem 0.6rem 0.5rem;
+  border-top-left-radius: 12px;
   border-bottom-right-radius: 1rem;
   font-size: 0.5rem;
   text-align: center;
@@ -338,9 +343,12 @@ h6 {
   left: 50%;
   transform: scale(0);
   transition: all 0.3s linear;
+  /* border-radius: 12px;   */
 }
 .img-container:hover {
   background: rgba(0, 0, 0, 0.8);
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
 }
 .img-container:hover img {
   opacity: 0.3;
@@ -352,12 +360,15 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: var(--darkGrey);
+  background: #B33771;
+  color: #fff;
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
   font-weight: 700;
   letter-spacing: var(--mainSpacing);
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
 }
 /* end of room  */
 /* single room*/

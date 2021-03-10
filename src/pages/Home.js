@@ -1,18 +1,13 @@
 import React from 'react';
-import Hero from '../components/Hero';
-import Banner from '../components/Banner';
-import { Link } from 'react-router-dom';
+import Carrousel from '../components/Carrousel';
+import {SliderData} from '../data/SliderData';
 import Services from '../components/Services';
 import FeaturedRooms from '../components/FeaturedRooms';
 
 const Home = () => {
   return (
     <>
-      <Hero >
-        <Banner title="luxurious rooms" subtitle="deluxe rooms starting at ₦6000">
-          <Link to='/' className="btn-primary">Our Rooms</Link>
-        </Banner>
-      </Hero>
+      <Carrousel slides={SliderData}/>
       <Services />
       <FeaturedRooms />
     </>
