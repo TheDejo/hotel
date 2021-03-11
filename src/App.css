@@ -4,9 +4,9 @@
   box-sizing: border-box;
 }
 :root {
-  --primaryColor: #af9a7d;
+  --primaryColor: #fed330;
   --mainWhite: #fff;
-  --offWhite: #f7f7f7;
+  --offWhite: #121212;
   --mainBlack: #222;
   --mainGrey: #ececec;
   --darkGrey: #cfcfcf;
@@ -14,6 +14,8 @@
   --mainSpacing: 3px;
   --lightShadow: 2px 5px 3px 0px rgba(0, 0, 0, 0.5);
   --darkShadow: 4px 10px 5px 0px rgba(0, 0, 0, 0.5);
+  --fontSize1: 400;
+  --fontSize2: 300;
 }
 /* globals */
 body {
@@ -101,6 +103,11 @@ h6 {
   display: flex;
   justify-content: space-between;
 }
+
+.nav-header a  h3 {
+  color: #B33771;
+  text-decoration: none;
+}
 .nav-btn {
   background: transparent;
   border: none;
@@ -121,11 +128,11 @@ h6 {
   display: block;
   text-decoration: none;
   padding: 1rem 0;
-  color: var(--mainBlack);
+  color: var(--mainWhite);
   transition: var(--mainTransition);
   text-align: center;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: 400;
   letter-spacing: var(--mainSpacing);
 }
 .nav-links a:hover {
@@ -234,8 +241,10 @@ h6 {
   padding: 5rem 0;
 }
 .services {
-  background: var(--darkGrey);
+  background: var(--offWhite);
   text-align: center;
+  color: var(--mainWhite);
+  font-weight: 400;
 }
 .services-center {
   width: 90vw;
@@ -254,10 +263,12 @@ h6 {
 .services h6 {
   letter-spacing: var(--mainSpacing);
   text-transform: capitalize;
+  color: var(--mainWhite);
 }
 .services p {
   width: 80%;
   margin: 0 auto;
+  color: var(--mainWhite);
 }
 @media screen and (min-width: 992px) {
   .services-center {
@@ -300,12 +311,12 @@ h6 {
 /* end pf featured rooms */
 /* room */
 .room {
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2); */
   transition: var(--mainTransition);
   border-radius: 12px;
 }
 .room:hover {
-  box-shadow: var(--darkShadow);
+  /* box-shadow: var(--darkShadow); */
 }
 
 .img-container {
@@ -360,12 +371,12 @@ h6 {
   transform: translate(-50%, -50%) scale(1);
 }
 .room-info {
-  background: #B33771;
+  background: #6D214F;
   color: #fff;
   text-transform: capitalize;
   padding: 0.5rem 0;
   text-align: center;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: var(--mainSpacing);
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;

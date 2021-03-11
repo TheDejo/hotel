@@ -95,7 +95,7 @@ const SliderButtons = styled.div`
   bottom: 50px;
   right: 50px;
   display: flex;
-  z-index: 10;
+  z-index: 7;
 `;
 
 const arrowButtons = css`

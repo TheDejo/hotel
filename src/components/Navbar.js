@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="nav-center">
           <div className="nav-header">
             <Link to="/">
-              <h4>Dejo</h4>
+              <h3>Dejo</h3>
             </Link>
             <button type="button" className="nav-btn" onClick={toggle}>
               <FaGripLines className="nav-icon"/>

@@ -11,7 +11,7 @@ export const SliderData = [
     path: '/',
     image: img1,
     alt: 'House',
-    label: 'View Home'
+    label: 'View Rooms'
   },
   {
     title: 'Luxury Rooms',
@@ -19,7 +19,7 @@ export const SliderData = [
     path: '/rooms',
     image: img2,
     alt: 'House',
-    label: 'View Home'
+    label: 'View Rooms'
   },
   {
     title: 'Luxury Rooms',
@@ -27,7 +27,7 @@ export const SliderData = [
     path: '/rooms',
     image: img3,
     alt: 'House',
-    label: 'View Home'
+    label: 'View Rooms'
   },
   {
     title: 'Luxury Rooms',
@@ -35,6 +35,6 @@ export const SliderData = [
     path: '/rooms',
     image: img4,
     alt: 'House',
-    label: 'View Home'
+    label: 'View Rooms'
   }
 ]
