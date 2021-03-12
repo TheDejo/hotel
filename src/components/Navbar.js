@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {FaGripLines} from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
+
 const Navbar = () => {
   const [open, setOpen] = useState(false)
 
@@ -21,10 +22,10 @@ const Navbar = () => {
             </button>
           </div>
           <ul className={open ? "nav-links show-nav" : "nav-links"}>
-            <li>
+            <li onClick={toggle}>
               <Link to="/">Home</Link>
             </li>
-            <li>
+            <li onClick={toggle}>
               <Link to="/rooms">Rooms</Link>
             </li>
           </ul>
