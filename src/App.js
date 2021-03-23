@@ -9,6 +9,7 @@ import Error from './pages/Error';
 import { Route, Switch } from 'react-router-dom';
 
 import './App.css'
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
      <Route path="/rooms/:slug" exact component={SingleRooms} /> 
      <Route component={Error}/>
     </Switch>
+    <Footer />
     </>
   );
 };
